@@ -59,7 +59,7 @@ export default function ChatBot() {
       <div className="items-center flex justify-center p-4">
         <Card className="w-full max-w-2xl">
           <CardHeader>
-            <CardTitle>AI Chatbot</CardTitle>
+            <CardTitle>AI Chatbot for Job assistant</CardTitle>
           </CardHeader>
           <CardContent className="h-[60vh] overflow-y-auto">
             {messages.map((m, index) => (
