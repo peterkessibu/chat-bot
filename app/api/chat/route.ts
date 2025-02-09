@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
     stream: true,
   });
 
-  let accumulatedResponse = '';
+  let accumulatedResponse = "";
 
   try {
     for await (const chunk of completion) {
