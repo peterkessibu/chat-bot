@@ -88,7 +88,7 @@ export default function ChatBot() {
                 placeholder="Type your message..."
                 className="flex-grow"
               />
-              <Button type="submit" disabled={isTyping}>
+              <Button variant="default" type="submit" disabled={isTyping}>
                 Send
               </Button>
             </form>
