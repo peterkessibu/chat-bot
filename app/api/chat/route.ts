@@ -81,6 +81,7 @@ export async function POST(req: NextRequest) {
       const content = chunk.choices[0]?.delta?.content;
       if (content) {
         accumulatedResponse += content;
+        console.log("Response:", content);
       }
     }
   } catch (error) {
