@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
 import { Spinner } from "../components/Spinner";
 import Header from "../components/Header";
 
@@ -63,7 +69,10 @@ export default function ChatBot() {
           </CardHeader>
           <CardContent className="h-[60vh] overflow-y-auto">
             {messages.map((m, index) => (
-              <div key={index} className={`mb-4 ${m.role === "user" ? "text-right" : "text-left"}`}>
+              <div
+                key={index}
+                className={`mb-4 ${m.role === "user" ? "text-right" : "text-left"}`}
+              >
                 <span
                   className={`inline-block p-2 rounded-lg ${m.role === "user" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
                 >
