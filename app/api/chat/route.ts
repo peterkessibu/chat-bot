@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
   const messages = Array.isArray(data) ? data : [data];
   const completion = await openai.chat.completions.create({
     messages: [{ role: "system", content: systemPrompt }, ...messages],
-    model: "qwen/qwen-turbo",
+    model: "deepseek/deepseek-r1-distill-llama-8b",
     stream: true,
   });
 
